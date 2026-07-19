@@ -1,0 +1,13 @@
+{
+  "coordinate_convention": "world: X/Y horizontal, Z upward; body: X forward, Y left, Z upward; depth = -world_z",
+  "source_model": "simulatedrobot.zip / simulatedrobot/urdf/simulatedrobot.urdf",
+  "body_origin_cad_xyz_used_for_sim": [-0.015387, -1.2703, 0.0053548],
+  "mass_kg": 2.2077875,
+  "thrusters": [
+    {"name": "front_vertical", "joint_name": "frontwheeljoint", "cad_xyz": [-0.015431, -1.065, 0.0], "direction_body": [0, 0, 1], "max_force_N": 12.0},
+    {"name": "rear_right_vertical", "joint_name": "rbj", "cad_xyz": [-0.10685, -1.514, 0.0], "direction_body": [0, 0, 1], "max_force_N": 12.0},
+    {"name": "rear_left_vertical", "joint_name": "lbj", "cad_xyz": [0.076668, -1.520, 0.0023601], "direction_body": [0, 0, 1], "max_force_N": 12.0},
+    {"name": "left_horizontal", "joint_name": "lfj", "cad_xyz": [0.12044, -1.2421, 0.0014413], "direction_body": [1, 0, 0], "max_force_N": 8.0},
+    {"name": "right_horizontal", "joint_name": "rfj", "cad_xyz": [-0.1513, -1.2421, 0.0074378], "direction_body": [1, 0, 0], "max_force_N": 8.0}
+  ]
+}
