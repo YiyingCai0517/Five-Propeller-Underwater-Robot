@@ -1,0 +1,39 @@
+# Build output
+build/
+cmake-build-*/
+*.elf
+*.hex
+*.bin
+*.map
+*.obj
+*.o
+*.d
+*.su
+
+# IDE and editor state
+.idea/
+.vscode/
+*.user
+*.bak
+*.tmp
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+telemetry_log_*.csv
+outputs/
+simulation/python/outputs/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Generated logs and exported archives
+*.log
+unify_code.zip
+underwaterviecle.zip
+simulatedrobot.zip

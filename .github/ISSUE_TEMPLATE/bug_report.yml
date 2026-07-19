@@ -1,0 +1,44 @@
+name: Bug report
+description: Report a reproducible firmware, tooling, CAD, or simulation problem
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Firmware / control
+        - PC tool / communication
+        - Mechanical / CAD
+        - Python simulation
+        - ROS / URDF
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: Describe what happened and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      placeholder: Include commands, mode, input values, hardware revision, and test environment.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or evidence
+      description: Attach short logs, telemetry, photos, or screenshots. Remove secrets and personal data.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I have stated whether this issue caused unexpected motor motion, leakage, overheating, or loss of control.
+          required: true

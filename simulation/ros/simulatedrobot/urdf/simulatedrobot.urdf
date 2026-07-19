@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="simulatedrobot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.015387 0.0053548 1.2703"
+        rpy="0 0 0" />
+      <mass
+        value="2.1846" />
+      <inertia
+        ixx="0.011681"
+        ixy="-6.5459E-06"
+        ixz="-4.3776E-06"
+        iyy="0.011662"
+        iyz="-3.337E-05"
+        izz="0.0065666" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simulatedrobot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simulatedrobot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="frontwheel">
+    <inertial>
+      <origin
+        xyz="-1.0713E-08 0.0053748 -3.0224E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0046375" />
+      <inertia
+        ixx="1.7181E-06"
+        ixy="4.5058E-13"
+        ixz="-7.8408E-14"
+        iyy="3.0171E-07"
+        iyz="1.9638E-12"
+        izz="1.7181E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simulatedrobot/meshes/frontwheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simulatedrobot/meshes/frontwheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="frontwheeljoint"
+    type="continuous">
+    <origin
+      xyz="-0.015431 -1.065 0"
+      rpy="-1.5708 0 -0.57871" />
+    <parent
+      link="base_link" />
+    <child
+      link="frontwheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rbw">
+    <inertial>
+      <origin
+        xyz="-1.0713E-08 0.0051351 -3.0224E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0046375" />
+      <inertia
+        ixx="1.7181E-06"
+        ixy="4.5058E-13"
+        ixz="-7.8408E-14"
+        iyy="3.0171E-07"
+        iyz="1.9638E-12"
+        izz="1.7181E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simulatedrobot/meshes/rbw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simulatedrobot/meshes/rbw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rbj"
+    type="continuous">
+    <origin
+      xyz="-0.10685 -1.514 0"
+      rpy="-1.5708 0 2.5629" />
+    <parent
+      link="base_link" />
+    <child
+      link="rbw" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="lbw">
+    <inertial>
+      <origin
+        xyz="7.7736E-08 0.0074848 -1.5396E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0046375" />
+      <inertia
+        ixx="1.7181E-06"
+        ixy="-5.9633E-12"
+        ixz="-1.63E-12"
+        iyy="3.0171E-07"
+        iyz="9.0528E-12"
+        izz="1.7181E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simulatedrobot/meshes/lbw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simulatedrobot/meshes/lbw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lbj"
+    type="continuous">
+    <origin
+      xyz="0.076668 -1.52 0.0023601"
+      rpy="-1.5876 0.025813 2.5657" />
+    <parent
+      link="base_link" />
+    <child
+      link="lbw" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="lfw">
+    <inertial>
+      <origin
+        xyz="3.366E-08 -0.027425 1.7595E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0046375" />
+      <inertia
+        ixx="1.7181E-06"
+        ixy="-1.974E-12"
+        ixz="-1.955E-13"
+        iyy="3.0171E-07"
+        iyz="-1.3411E-12"
+        izz="1.7181E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simulatedrobot/meshes/lfw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simulatedrobot/meshes/lfw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lfj"
+    type="continuous">
+    <origin
+      xyz="0.12044 -1.2421 0.0014413"
+      rpy="0 -0.39309 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lfw" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rfw">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simulatedrobot/meshes/rfw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simulatedrobot/meshes/rfw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rfj"
+    type="continuous">
+    <origin
+      xyz="-0.1513 -1.2421 0.0074378"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rfw" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
