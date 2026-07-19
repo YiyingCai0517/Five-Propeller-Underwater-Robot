@@ -6,7 +6,6 @@
 ![Platform](https://img.shields.io/badge/MCU-STM32F407-03234B)
 ![RTOS](https://img.shields.io/badge/RTOS-FreeRTOS-2C9F45)
 ![Thrusters](https://img.shields.io/badge/thrusters-3%20vertical%20%2B%202%20horizontal-167D9A)
-![Status](https://img.shields.io/badge/status-course%20prototype-orange)
 
 ![SolidWorks 最终装配体 / Final SolidWorks assembly](docs/assets/cad-assembly.png)
 
@@ -14,8 +13,6 @@
 
 本项目是一款基于 STM32F407 和 FreeRTOS 的小型五推进器水下机器人课程设计。机器人采用三个垂直推进器控制升沉、俯仰和横滚，两个水平推进器控制前进、后退和偏航。仓库已将嵌入式固件、SolidWorks 机械设计、LoRa 上位机、Python 六自由度仿真、ROS1 模型、样机照片和工程说明整理为可直接浏览和审查的源文件。
 
-> [!CAUTION]
-> 本项目是教学与研究原型，不是经过认证的水下设备。当前代码中的深度换算结果可能约小 10 倍，主动控制模式也尚未实现 LoRa 指令丢失看门狗。在接通推进器或进行闭环水池试验前，请先阅读[安全说明与已知限制](docs/safety.md)，并核对接线、推进器方向和保护措施。
 
 ### 项目功能
 
